@@ -1,0 +1,27 @@
+---
+title: "STA380_Short_Assignment"
+author: "Vivian Wang"
+date: '2022-07-28'
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+```{r}
+# load library rcompanion
+library(rcompanion)
+
+# create data vector
+x= c(rnorm(10000))
+
+# draw plot
+plotNormalHistogram( x, prob = FALSE,
+                     main = "Normal Distribution overlay on Histogram",
+                     length = 1000 )
+```
+
